@@ -92,11 +92,17 @@ img {
 
 .buttons>* {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .section {
     padding: 20px;
+}
+
+.section>p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Main header
@@ -137,16 +143,28 @@ img {
 
 .keep-track-section img {
     width: 100%;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-    max-width: 500px;
+    max-width: 600px;
+    align-self: center;
 }
-
 
 .keep-track-section ul {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    margin-top: 5rem;
+}
+
+.keep-track-section ul p{
+    max-width: 500px;
+}
+
+.keep-track-section .content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 /* Access clipboard section
@@ -202,57 +220,66 @@ img {
 /* Clipboard for ios section
 ---------------------------------------------------------------------- */
 
-.clipboard-for-ios-section{
+.clipboard-for-ios-section {
     margin-bottom: 10rem;
 }
 
-.clipboard-for-ios-section p{
-    margin-bottom: 3rem ;
+.clipboard-for-ios-section p {
+    margin-bottom: 3rem;
 }
 
 /* Footer
 ---------------------------------------------------------------------- */
 
-footer{
+footer {
     background-color: hsl(0 0% 97%);
     padding: 40px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:3rem;
+    gap: 3rem;
 }
 
-footer nav{
-    display:contents;
+footer nav {
+    display: contents;
 }
 
-footer .logo{
-    width:50px;
+footer .logo {
+    width: 50px;
 }
 
-.vertical-links{
-    display:flex;
+.vertical-links {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.vertical-links a{
-    color:var(--Gray-700);
+.vertical-links a {
+    color: var(--Gray-700);
 }
 
-.vertical-links a:hover{
+.vertical-links a:hover {
     color: var(--Green-500);
 }
 
-.logo-links{
-    display:flex;
+.logo-links {
+    display: flex;
     justify-content: center;
     gap: 3rem;
     width: 100%;
 }
 
-.logo-links img{
-    width:30px;
+.logo-links img {
+    width: 30px;
+}
+
+@media screen and (min-width: 800px){
+    .keep-track-section .content{
+        flex-direction: row;
+        text-align: left;
+        column-gap: 5rem;
+        align-items: flex-start;
+    }
 }
