@@ -198,3 +198,61 @@ img {
 .partners-section img {
     width: 125px;
 }
+
+/* Clipboard for ios section
+---------------------------------------------------------------------- */
+
+.clipboard-for-ios-section{
+    margin-bottom: 10rem;
+}
+
+.clipboard-for-ios-section p{
+    margin-bottom: 3rem ;
+}
+
+/* Footer
+---------------------------------------------------------------------- */
+
+footer{
+    background-color: hsl(0 0% 97%);
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+
+footer nav{
+    display:contents;
+}
+
+footer .logo{
+    width:50px;
+}
+
+.vertical-links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.vertical-links a{
+    color:var(--Gray-700);
+}
+
+.vertical-links a:hover{
+    color: var(--Green-500);
+}
+
+.logo-links{
+    display:flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.logo-links img{
+    width:30px;
+}
