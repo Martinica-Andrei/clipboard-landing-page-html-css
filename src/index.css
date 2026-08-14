@@ -183,3 +183,18 @@ img {
     width: 50px;
     margin-bottom: 2rem;
 }
+
+/* Partners section
+---------------------------------------------------------------------- */
+
+.partners-section {
+    margin: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.partners-section img {
+    width: 125px;
+}
