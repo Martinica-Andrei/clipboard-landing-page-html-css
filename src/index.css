@@ -52,7 +52,7 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -102,7 +102,7 @@ img {
 /* Main header
 ---------------------------------------------------------------------- */
 
-.main-header{
+.main-header {
     margin-bottom: 8rem;
 }
 
@@ -131,8 +131,8 @@ img {
 /* Keep track section 
 ---------------------------------------------------------------------- */
 
-.keep-track-section{
-    margin-bottom: 16rem;
+.keep-track-section {
+    margin-bottom: 12rem;
 }
 
 .keep-track-section img {
@@ -143,8 +143,43 @@ img {
 }
 
 
-.keep-track-section ul{
-    display:flex;
+.keep-track-section ul {
+    display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+/* Access clipboard section
+---------------------------------------------------------------------- */
+
+.access-clipboard-section {
+    margin-bottom: 5rem;
+}
+
+.access-clipboard-section img {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Supercharge your workflow section
+---------------------------------------------------------------------- */
+
+.supercharge-your-workflow-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 6rem;
+}
+
+.supercharge-your-workflow-section section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supercharge-your-workflow-section img {
+    order: -1;
+    width: 50px;
+    margin-bottom: 2rem;
 }
