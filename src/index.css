@@ -50,8 +50,8 @@ a {
     text-decoration: none;
 }
 
-img{
-    width:200px;
+img {
+    width: 200px;
 }
 
 .button {
@@ -62,7 +62,7 @@ img{
     font-size: 1rem;
 }
 
-.button:hover{
+.button:hover {
     cursor: pointer;
     filter: brightness(1.05);
     box-shadow: 3px 3px 5px black;
@@ -76,12 +76,16 @@ img{
     background-color: var(--Blue-100);
 }
 
-.buttons{
+.buttons {
     display: flex;
-    flex-direction: column;
-    gap:20px;
-    width:100%;
-    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px;
+    width: 100%;
+}
+
+.buttons > * {
+    width:250px;
 }
 
 
@@ -89,16 +93,26 @@ img{
 ---------------------------------------------------------------------- */
 
 .main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     margin-bottom: 100px;
 }
 
+.main-header .logo-card {
+    padding: 70px 0 20px;
+    width: 100%;
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .main-header .logo {
-    margin: 50px 0;
     width: 100px;
+}
+
+.main-header-content {
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-header p {
