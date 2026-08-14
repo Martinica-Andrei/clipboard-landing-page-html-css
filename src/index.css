@@ -35,10 +35,12 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 h3 {
     font-size: 1.25rem;
+    margin-bottom: 0.6rem;
 }
 
 p {
@@ -48,6 +50,10 @@ p {
 
 a {
     text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 img {
@@ -80,20 +86,24 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px 10px;
+    gap: 1.5rem 0.75rem;
     width: 100%;
 }
 
-.buttons > * {
-    width:250px;
+.buttons>* {
+    width: 100%;
+    max-width: 300px;
 }
 
+.section {
+    padding: 20px;
+}
 
 /* Main header
 ---------------------------------------------------------------------- */
 
-.main-header {
-    margin-bottom: 100px;
+.main-header{
+    margin-bottom: 8rem;
 }
 
 .main-header .logo-card {
@@ -109,12 +119,32 @@ img {
 }
 
 .main-header-content {
-    padding: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .main-header p {
-    margin: 15px 0 30px;
+    margin: 1rem 0 3rem;
+}
+
+/* Keep track section 
+---------------------------------------------------------------------- */
+
+.keep-track-section{
+    margin-bottom: 16rem;
+}
+
+.keep-track-section img {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+
+.keep-track-section ul{
+    display:flex;
+    flex-direction: column;
+    gap: 4rem;
 }
